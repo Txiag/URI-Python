@@ -1,0 +1,17 @@
+A = str(input())
+A = str.split(A)
+B = float(A[1])
+C = float(A[2])
+A = float(A[0])
+d = ((B**2) - ((4*A)*C))
+if d < 0 or A == 0:
+    print('Impossivel calcular')
+else:
+    r1 = (B*-1) + (d**(1/2))
+    r1 = round(r1, 6)
+    r1 = r1/(2*A)
+    print("R1 = {:.5f}".format(r1))
+    r2 = (B*-1) - (d**(1/2))
+    r2 = round(r2, 6)
+    r2 = r2/(2*A)
+    print("R2 = {:.5f}".format(r2))

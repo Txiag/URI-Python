@@ -1,0 +1,12 @@
+A = str(input())
+A = str.split(A)
+B = str(input())
+B = str.split(B)
+c1 = int(A[0])
+c2 = int(B[0])
+u1 = int(A[1])
+u2 = int(B[1])
+v1 = float(A[2])
+v2 = float(B[2])
+t = v1*u1 + u2*v2
+print('VALOR A PAGAR: R$ {:.2f}'.format(t))
